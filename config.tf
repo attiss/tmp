@@ -25,6 +25,7 @@ variable "iks_cluster_id" {
 
 provider "ibm" {
   ibmcloud_api_key = var.api_key
+  visibility = "private"
 }
 
 resource "ibm_sm_arbitrary_secret" "sm_arbitrary_secret" {
