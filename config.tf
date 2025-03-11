@@ -7,6 +7,22 @@ terraform {
   }
 }
 
+variable "api_key" {
+  type = string
+}
+
+variable "sm_instance_id" {
+  type = string
+}
+
+variable "sm_instance_crn" {
+  type = string
+}
+
+variable "iks_cluster_id" {
+  type = string
+}
+
 provider "ibm" {
   ibmcloud_api_key = var.api_key
 }
